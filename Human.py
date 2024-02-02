@@ -65,12 +65,12 @@ class Human:
                             
     def incubating(self):
         if (self.E==True):
-            if (random.random()<=1): # 3 days for incubation periods
+            if (random.random()<=.8): # 3 days for incubation periods
                 self.E=False
                 self.I=True
     def recovering(self):
         if (self.I==True):
-            if (random.random()<=1): # 7 days for infectious periods
+            if (random.random()<=.6): # 7 days for infectious periods
                 self.I=False
                 self.R=True
 
