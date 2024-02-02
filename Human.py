@@ -70,7 +70,7 @@ class Human:
                 self.I=True
     def recovering(self):
         if (self.I==True):
-            if (random.random()<=.6): # 7 days for infectious periods
+            if (random.random()<=.2): # 7 days for infectious periods
                 self.I=False
                 self.R=True
 
